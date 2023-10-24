@@ -11,4 +11,6 @@ easy vendoring and integration into other projects."
 HOMEPAGE=https://github.com/sethmlarson/rfc6555
 LICENSE=Apache-2.0
 
+BUILD_REQUIRES='python38-wheel python39-wheel'
+
 ARCH=noarch
