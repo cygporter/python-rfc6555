@@ -5,4 +5,4 @@ jobs:
     uses: cygporter/workflows/.github/workflows/build-test.yml@v1
     with:
       cygport_file: python-rfc6555.cygport
-      bootstrap_packages: cygport python3
+      bootstrap_packages: cygport python38 python39
