@@ -11,6 +11,17 @@ easy vendoring and integration into other projects."
 HOMEPAGE=https://github.com/sethmlarson/rfc6555
 LICENSE=Apache-2.0
 
-BUILD_REQUIRES='python38-wheel python39-wheel'
-
 ARCH=noarch
+
+handle_python_version () {
+	local version pkgversion
+
+	version="$1"
+	pkgversion="${version/.}"
+
+	BUILD_REQUIRES="${BUILD_REQUIRES:+$BUILD_REQUIRES }python${pkgversion}-wheel"
+}
+
+for v in ${PYTHON_WHEEL_VERSIONS//:/ }; do
+	handle_python_version "$v"
+done
