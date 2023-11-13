@@ -4,7 +4,7 @@ NAME=python-rfc6555
 VERSION=0.1.0
 RELEASE=1
 CATEGORY=Python
-SUMMARY='Python RFC 6555 "Happy Eyeballs" implementation'
+SUMMARY="Python RFC 6555 'Happy Eyeballs' implementation"
 DESCRIPTION="Synchronous Python implementation of the Happy Eyeballs Algorithm
 described in RFC 6555. Provided with a single file and dead-simple API to allow
 easy vendoring and integration into other projects."
